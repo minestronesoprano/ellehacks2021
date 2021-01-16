@@ -5,7 +5,8 @@ import {
     Modal,
     ModalContent,
     ModalBody,
-    useDisclosure
+    useDisclosure,
+    Button
 } from "@chakra-ui/react";
 import './Play.css';
 
@@ -69,7 +70,16 @@ const Play = () => {
                     <li>{prompt.name}</li> ))} */}
                 </ul>
             </div>
+            
+            <div className="scenario-box">
+                <p>The text goes here. Money money stuff fake scenario make money lose money.</p>
+                <Button className="choice" /*onClick={}*/ >Hi</Button>
+                <Button className="choice" /*onClick={}*/ >Bye</Button>
+            </div>
         </div>
+
+        
+        
     );
 }
 
