@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import net.javaguides.springboot.model.Scenario;
 
 @Repository
-public class ScenarioRepository extends JpaRepository<Scenario, Long>{
+public interface ScenarioRepository extends JpaRepository<Scenario, Long>{
     
 }
