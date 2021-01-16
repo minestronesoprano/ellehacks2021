@@ -14,36 +14,6 @@
     margin-top: 3%;
 }
 
-.scenario-box {
-    background-color: #630c34;
-    border: thin solid #7d4d59;
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    color: antiquewhite;
-    padding: 1%;
-    margin: auto;
-    position: relative;
-    width: 50%;
-}
-
-.choice {
-    padding: 0.5%;
-    border: medium solid #518eb4;
-    background-color: #241b54;
-    border-radius: 20%;
-    font-family: 'Roboto Slab', serif;
-    text-align: center;
-    color: antiquewhite;
-    font-size: 1vw;
-    margin: 1.5%;
-}
-
-.choice:hover {
-    background-color: #518eb4;
-    border: medium solid #241b54;
-    border-radius: 20%;
-}
-
 .intro-popup {
     background: white;
     z-index: 1;
@@ -115,4 +85,39 @@
 
 u {
     color: white;
+}
+
+.quiz-button {
+    font-size: 30px;
+    width: 30%;
+}
+
+.scenario-box {
+    background-color: #630c34;
+    border: thin solid #7d4d59;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: antiquewhite;
+    padding: 1%;
+    margin: auto;
+    position: relative;
+    width: 50%;
+}
+
+.choice {
+    padding: 0.5%;
+    border: medium solid #518eb4;
+    background-color: #241b54;
+    border-radius: 20%;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: antiquewhite;
+    font-size: 1vw;
+    margin: 1.5%;
+}
+
+.choice:hover {
+    background-color: #518eb4;
+    border: medium solid #241b54;
+    border-radius: 20%;
 }
