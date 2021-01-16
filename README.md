@@ -26,11 +26,11 @@ Special credits to <a href="https://www.youtube.com/watch?v=5RA5NpxbioI">this yo
 
 ## 💳 What We Learned 💳
 
-xd
+Through creating the Finance Simulator we learned about how important basic financial literacy may be to a person's life, as well as how to work together in a team despite the hackathon being virtual! 
 
 ## 💸 Challenges Faced 💸
 
-xd
+Challenges faced mainly related to managing a team despite the hackathon being virtual and some members even being across the country facing a time difference. It was also a challenge deciding what technologies to use to implement the game but in the end we figured it out. 
 
 ## 💰 Next Steps 💰
 
