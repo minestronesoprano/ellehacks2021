@@ -1,10 +1,10 @@
-#  Life in Literacy
+#  Finance Simulator 2021
 
 A simulation to help youth understand the importance of financial literacy. 👾🤓 Made for Ellehacks 2021! 👩🏻‍💻👩🏽‍💻 
 
 ## 💵 Description 💵
 
-Life in Literacy is a simulator that allows users to experience real life situations and make decisions that affect their spending and saving. The more financially literate decisions you make, the better off you will become as you progress through the levels (representing different stages of life).
+Finance Simulator 2021 is a simulator that allows users to experience real life situations and make decisions that affect their spending and saving. The more financially literate decisions you make, the better off you will become as you progress through the levels (representing different stages of life).
 
 ## 💴 Navigation 💴
 
@@ -20,7 +20,7 @@ We, the creators, were inspired to make the game after realizing the evident gap
 
 ## 💷 Tech Stack 💷
 
-We created Life in Literacy using a React front-end and Java Springboot back-end.
+We created Finance Simulator 2021 using a React front-end and Java Springboot back-end.
 For the front-end, we also used Chakra-UI components.<br/>
 Special credits to <a href="https://www.youtube.com/watch?v=5RA5NpxbioI">this youtube video</a> for a stellar tutorial on how to create a React-Java Springboot web-app, and for <a href="https://codepen.io/Eslam_Refa3y/pen/gOYrxrq">this awesome button template </a> we took inspriation from!
 
