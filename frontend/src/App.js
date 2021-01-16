@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       <div className="introduction-section">
-        <h1> LIFE IN LITERACY </h1>
+        <h1> FINANCE SIMULATOR 2021 </h1>
       </div>
       <footer>
         <h8>Made by: <a href="https://github.com/michelleberry">Michelle Berry</a>, <a href="https://github.com/radwin01">Yara Radwan</a>, <a href="https://github.com/mshankar58">Maya Shankar</a>, <a href="https://github.com/angelimnp">Angeli Manipon</a></h8>
