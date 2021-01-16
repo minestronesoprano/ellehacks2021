@@ -19,9 +19,6 @@ const Play = () => {
     const [savings, setSavings] = useState(100)
     const [expenses, setExpenses] = useState(0);
 
-    const [uni, setUni] = useState(true)
-    const [scholarship, setScholarship] = useState(0)
-
     const [showEnd, setShowEnd] = useState(false)
     const [currentScenario, setCurrentScenario] = useState(0);
 
@@ -472,6 +469,18 @@ const Play = () => {
         }
     };
 
+    const colourAge = (age) => {
+        if (age < 20) return "#f8c3af";
+        else if (age < 25) return "#fea5ad";
+        else return "#be8abf"
+    };
+
+
+    const colourSavings = (expenses) => {
+        if (expenses < 0) return "#c70039";
+        else return "#e1ffc2"
+    };
+
     return (
         <div className="Play">
             <div className="intro-popup">
@@ -510,26 +519,20 @@ const Play = () => {
                 </div>
                 ) : (
                     <>
-                    <div className='question-text'>{questions[currentScenario].question}</div>      
+                    <div className='scenario-box'>{questions[currentScenario].question}</div>      
                     <div className="stats-section">
                         <ul>
-                            <li> age: {questions[currentScenario].age} </li>
-                            <li> saving: ${savings} </li>
+                        
+                            <li> age: <span style={{ color: colourAge(questions[currentScenario].age) }}>{`${questions[currentScenario].age} `} </span></li>
+                            <li> saving: $<span style={{ color: colourSavings(savings) }}>{`${savings} `} </span> </li>
                             <li> income: ${income} </li>
                             <li> expenses: ${expenses} </li>
                         </ul>
                     </div>
                     <div className='answer-section'>
-                        <button className = 'quiz-button1' onClick={() => handleAnswerOptionClick(1, questions[currentScenario].answerOptions[0])}>{questions[currentScenario].answerOptions[0].option1} </button>
-                        <button className = 'quiz-button2' onClick={() => handleAnswerOptionClick(2, questions[currentScenario].answerOptions[1])}>{questions[currentScenario].answerOptions[1].option2} </button>
+                        <Button className = 'choice' onClick={() => handleAnswerOptionClick(1, questions[currentScenario].answerOptions[0])}>{questions[currentScenario].answerOptions[0].option1} </Button>
+                        <Button className = 'choice' onClick={() => handleAnswerOptionClick(2, questions[currentScenario].answerOptions[1])}>{questions[currentScenario].answerOptions[1].option2} </Button>
                     </div>   
-
-{/* <div className="scenario-box">
-<p>The text goes here. Money money stuff fake scenario make money lose money.</p>
-<Button className="choice"  >Hi</Button>
-<Button className="choice" >Bye</Button>
-</div> */}
-
                     </>
                 )}
             </div>
