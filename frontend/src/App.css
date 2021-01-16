@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Sura:wght@400;700&display=swap');
+
+.App {
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #31112c;
+}
+
+h1 {
+  color: #fbdcc4;
+  font-size: 4vw;
+  margin-left: -2%;
+  font-family: 'Sura', serif;
+}
+
+h3 {
+  font-size: 2vw;
+  margin-top: -3%;
+  margin-left: -3%;
+  color: #f2a07b;
+  font-family: 'Roboto Slab', serif;
+}
+
+.start-section li {
+  list-style-type: none;
+}
+
+.future-txt {
+  color: #c70039;
+}
+
+footer {
+  background: #7d0634a6;
+  color: #e0945a;
+  bottom: 0;
+  height: 2.8vw;
+  font-size: 1.3vw;
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+}
+
+a {
+  all: unset;
+  color: #e0945a;
+  cursor: pointer;
+}
+
+a:hover {
+  color: #fea5ad;
+}
+
+li {
+  list-style-type: none;
+}
+
+.play-button
+{
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 48.9%;
+  transform: translate(-50%, -50%);
+  width: inherit;
+  padding: 0.5%;
+  height: 3.5vw;
+  background: #4e00004d;
+  text-decoration: none;
+  line-height: 50px;
+  color: #fbdcc4;
+  font-size: 1.5vw;
+  font-family: verdana;
+  letter-spacing: 0.3vw;
+}
+
+.play-button:before,
+.play-button:after,
+.play-sec:before,
+.play-sec:after
+{
+  content: '';
+  position: absolute;
+  width: 2vw;
+  height: 0.3vw;
+  background: #2c0101;;
+  transition: 1.5s;
+  mix-blend-mode: saturation;
+}
+
+.play-button:before
+{
+  top: -2px;
+  left: -2px
+}
+
+.play-button:after
+{
+  top: -2px;
+  right: -2px;
+}
+
+.play-sec:before
+{
+  bottom: -2px;
+  left: -2px
+}
+
+.play-sec:after
+{
+  bottom: -2px;
+  right: -2px
+}
+
+.play-button:hover:before,
+.play-button:hover:after,
+.play-button:hover > .play-sec:before,
+.play-button:hover > .play-sec:after
+{
+  width: 200px;
+  height: 40px;
+}
+
+.profile-section {
+  position:absolute;
+  float: left;
+}
+
+.play-sec {
+  white-space: nowrap;
+}
