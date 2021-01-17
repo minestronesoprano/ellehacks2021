@@ -115,7 +115,7 @@ u {
     justify-content: center;
     justify-self: center;
     max-height: 30%;
-    margin-top: 3%;
+    margin-top: -1%;
 }
 
 .choice1, .choice2 {
@@ -132,14 +132,14 @@ u {
     color:#e0845a;
     font-size: 1.4vw;
     margin: 1.5%;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 
 .choice1 {
     border: medium solid #dcd6f7a6;
     color: #dcd6f7;
     border-radius: 20px 1px 1px 20px;
-    margin-left: 10%;
+    margin-left: 8%;
 }
 
 .choice2 {
@@ -156,9 +156,11 @@ u {
     border: medium solid #fbdcc4;
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'> 💸</text></svg>") 16 0,auto; /*!emojicursor.app*/
 }
+
 .choice1:visited {
     all:unset;
 }
+
 h4 {
     margin-top: -1%;
     margin-left: -2%;
@@ -190,7 +192,7 @@ h4 {
   position: absolute;
   display: block;
   top: 75%;
-  left: 47.5%;
+  left: 48%;
   transform: translate(-50%, -50%);
   width: inherit;
   padding: 0.5%;

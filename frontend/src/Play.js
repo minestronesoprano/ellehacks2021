@@ -618,9 +618,9 @@ const Play = () => {
                     <div className="stats-section">
                         <ul>
                             <li> age: <span style={{ color: colourAge(questions[currentScenario].age) }}>{`${questions[currentScenario].age} `} </span></li>
-                            <li> saving: $<span style={{ color: colourSavings(savings) }}>{`${savings} `} </span> </li>
+                            <li> savings: $<span style={{ color: colourSavings(savings) }}>{`${savings} `} </span> </li>
                             <li> annual income: ${income} </li>
-                            <li> expenses: ${expenses} </li>
+                            <li> annual expenses: ${expenses} </li>
                         </ul>
                     </div>
                     <div className='answer-section'>

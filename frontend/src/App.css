@@ -69,7 +69,7 @@ li {
   position: absolute;
   display: block;
   top: 50%;
-  left: 49.5%;
+  left: 49%;
   transform: translate(-50%, -50%);
   width: inherit;
   padding: 0.5%;
