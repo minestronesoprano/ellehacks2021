@@ -619,7 +619,7 @@ const Play = () => {
                         <ul>
                             <li> age: <span style={{ color: colourAge(questions[currentScenario].age) }}>{`${questions[currentScenario].age} `} </span></li>
                             <li> saving: $<span style={{ color: colourSavings(savings) }}>{`${savings} `} </span> </li>
-                            <li> income: ${income} </li>
+                            <li> annual income: ${income} </li>
                             <li> expenses: ${expenses} </li>
                         </ul>
                     </div>
