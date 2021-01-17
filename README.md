@@ -1,6 +1,7 @@
 #  Finance Simulator 2021
 
-A simulation to help youth understand the importance of financial literacy. 👾🤓 Made for Ellehacks 2021! 👩🏻‍💻👩🏽‍💻 
+A simulation to help youth understand the importance of financial literacy. 👾🤓 Made for Ellehacks 2021! 👩🏻‍💻👩🏽‍💻  <br />
+Finalist for Ellehacks 2021 and Recipient of the Rogers Custom Award! (and placed third for Bell's Custom Award too!)
 
 ## 💵 Description 💵
 
@@ -14,7 +15,7 @@ There is no way to "win" the game: Our end-goal is to solely illuminate the bene
 ### Tech Requirements
 Our app is currently not hosted on a domain. For the time being, you may download the repo, run EllehacksApplication.java and then, in the frontend folder path, run our React app by entering ```yarn start``` in your terminal.<br/>
 
-In the meantime, you may view a virtual tour of our object!
+In the meantime, you may view a virtual tour of our product below, or <a href="https://youtu.be/iTpVSSHqkcA">watch our demo</a> instead!
 ![landing page](./images/intro.png)
 <p align="center"><sup><i>Landing page</i></sup></p>
 
@@ -45,9 +46,9 @@ This happened to be the first hackathon two of us have participated in, and defi
 
 ## 💸 Challenges Faced 💸
 
-Since one of our members lives in a different timezone, we found it difficult to arrange meeting times that were convenient for all of us. It was also a challenge deciding what technologies to use to implement the game, since we all have vastly varying skill sets. This was  the very first time for several members to use Java Spring and React, so it was a real challenge learning all the necessary tech in time to create a stunning final product. Overall, we are all extremely proud of our work and 
+Since one of our members lives in a different timezone, we found it difficult to arrange meeting times that were convenient for all of us. It was also a challenge deciding what technologies to use to implement the game, since we all have vastly varying skill sets. This was  the very first time for several members to use Java Spring and React, so it was a real challenge learning all the necessary tech in time to create a stunning final product. Overall, we are all extremely proud of our work and hope others may find great use in Finance Simulator 2021!
 
 ## 💰 Next Steps 💰
 
 Though it is surely important to save money, we also believe balance is key. Though a user, who has the sole aim of being financially stable, may choose to opt out of any events that may require them to spend, they might also lose out on forming any sort of interpersonal relationship and lack a social life. Thus, a future improvement to our simulation is to factor in certain variables, such as the number of friends you make/lose. <br/>
-Another feature we heavily considered is the inclusion of different routes, since we recognize not everyone is the same. Some might want to pursue a post-secondary education, while others may not. Different routes would allow different users to find relevant and important information to pertain to their own life adventures. We also would like to incorporate the theme of luck, as we all know sometimes, events are 100% out of our control. 
+Another feature we heavily considered is the inclusion of different routes, since we recognize not everyone is the same. Some might want to pursue a post-secondary education, while others may not. Different routes would allow different users to find relevant and important information to pertain to their own life adventures. We also would like to incorporate the theme of luck, as we all know sometimes, events are 100% out of our control. <br />
