@@ -27,7 +27,7 @@ public class ElleHacksApplication implements CommandLineRunner {
         "No thank you. I should be focusing only on school right now.", 0, 0, 0));
     this.scenarioRepository.save(new Scenario(
         "Your mother advises you to save 25% of your income every year for the rest of your life.", 16,
-        "No, I'd rather spend my money and have fun", -10, 0, 0, "Yeah okay, that sounds like a great idea.", 0, 0, 0));
+        "Yeah okay, that sounds like a great idea.", 0, 0, 0, "No, I'd rather spend my money and have fun", -10, 0, 0));
     this.scenarioRepository.save(new Scenario(
         "A year has passed and you are planning to quit your part-time job. Do you want to buy a wallet for your pocket money? It will cost $20.",
         17,
@@ -35,7 +35,7 @@ public class ElleHacksApplication implements CommandLineRunner {
         -20, -7097, 0, "No thanks, I have pockets. You drop $5 as you walk away.", 0, -7100, 5));
     this.scenarioRepository.save(new Scenario(
         "Oh no! You have been diagnosed with nearsightedness and you need 200$ to buy new glasses.",
-        18, "Yes, buy the glasses", -200, 0, 0,
+        18, "Yes, buy the glasses.", -200, 0, 0,
         "Don't buy the glasses, I'll just live in some discomfort.", 0, 0, 0));
     this.scenarioRepository.save(new Scenario(
         "You have graduated from high school and have now decided to enroll in University. Tuition costs $9000 per year.",
@@ -60,14 +60,14 @@ public class ElleHacksApplication implements CommandLineRunner {
         "I will not accept the TA offer. I would much rather graduate on time and get a full-time job then.",
         0, 0, 0));
     this.scenarioRepository.save(new Scenario(
-        "Congratulations! You graduated and are currently deciding between 2 job offers: Job A pays $40k yearly and is conveniently near your parent's house! Job B pays"
-            + " $75k yearly but the office is located far away and will require you to move ... rent in the area is about $2000 monthly ($24,000 yearly).",
+        "You graduated and are deciding between 2 job offers: Job A pays $40k yearly and is near your parent's house! Job B pays"
+            + " $75k yearly but the office is located far away and will require you to move ... rent in the area is about $2k monthly ($24k yearly).",
         23, "I will take Job A, as I value being close to my family and friends.", 0, 40000, -9000,
         "I will take Job B, as I would like a high income and would be willing to start anew in an unfamiliar place.",
         0, 75000, 15000));
     this.scenarioRepository.save(new Scenario(
         "Your mother's birthday is coming up! She invites you home for the weekend, since it has been a while.",
-        24, "I will purchase a gaudy $200 necklace for my mother. She deserves the best!.", -200,
+        24, "I will purchase a gaudy $200 necklace for my mother. She deserves the best!", -200,
         0, 0,
         "I will wish my mother a happy birthday, knowing my presence is already a gift to her.", 0,
         0, 0));
@@ -84,7 +84,7 @@ public class ElleHacksApplication implements CommandLineRunner {
             + "chance that you would like to start a family.",
         30,
         "I am open to starting a family, and am willing to endure the financial costs of raising a child.",
-        0, 0, 0,
+        0, 0, 15000,
         "I don't think I would like to start a family. The cost of kids is a price I am not willing to pay yet.",
         0, 0, 0));
   }
