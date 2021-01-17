@@ -7,7 +7,7 @@
 .profile-section li {
     color: antiquewhite;
     font-family: 'Roboto Slab', serif;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
 }
 
 .profile-section {
@@ -15,6 +15,7 @@
 }
 
 .intro-popup {
+    margin-top: 5%;
     background: white;
     z-index: 1;
 }
@@ -38,11 +39,11 @@
     font-family: 'Anonymous Pro', monospace;
     font-size: 1.3vw;
     padding: 1.3%;
-    width: 60%;
+    max-width: 60%;
     left: 17.5%;
-    position: fixed;
+    position: absolute;
     color: #fbdcc4;
-    background: rgb(24, 0, 0);
+    background:#160202;
     text-align: center;
 }
 
@@ -87,37 +88,181 @@ u {
     color: white;
 }
 
-.quiz-button {
+.quiz-button1 {
+    font-size: 30px;
+    width: 30%;
+}
+
+.quiz-button2 {
     font-size: 30px;
     width: 30%;
 }
 
 .scenario-box {
-    background-color: #630c34;
-    border: thin solid #7d4d59;
-    font-family: 'Roboto Slab', serif;
+    background-color: #2903144b;
+    font-family: 'Anonymous Pro', monospace;
+    line-height: 25px;
     text-align: center;
-    color: antiquewhite;
+    font-size: 1.8vw;
+    margin-left: 24%;
+    margin-right: 30%;
+    max-width: 50%;
+    min-width: 50%;
+    color: #e4a385;
+    font-weight: 700;
     padding: 1%;
-    margin: auto;
-    position: relative;
-    width: 50%;
+    position: fixed;
+    justify-content: center;
+    justify-self: center;
+    max-height: 30%;
+    margin-top: 3%;
 }
 
-.choice {
-    padding: 0.5%;
-    border: medium solid #518eb4;
-    background-color: #241b54;
-    border-radius: 20%;
-    font-family: 'Roboto Slab', serif;
+.choice1, .choice2 {
+    max-width: 40%;
+    min-width: 35%;
+    height: 12%;
+    position: fixed;
+    padding: 1%;
+    border: medium solid #110909;
+    background-color: #2903144b;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
     text-align: center;
-    color: antiquewhite;
-    font-size: 1vw;
+    color:#e0845a;
+    font-size: 1.4vw;
     margin: 1.5%;
+    margin-top: 10%;
 }
 
-.choice:hover {
-    background-color: #518eb4;
-    border: medium solid #241b54;
-    border-radius: 20%;
+.choice1 {
+    border: medium solid #dcd6f7a6;
+    color: #dcd6f7;
+    border-radius: 20px 1px 1px 20px;
+    margin-left: 10%;
+}
+
+.choice2 {
+    border: medium solid #f3d4d4a6;
+    color: #f3d4d4;
+    border-radius: 1px 20px 20px 1px;
+    margin-left: 52%;
+}
+
+
+.choice1:hover, .choice2:hover {
+    background: linear-gradient(to right, #6c5b7b, #c06c84, #f67280, #ffaaaa);
+    color: #31112c;
+    border: medium solid #fbdcc4;
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'> 💸</text></svg>") 16 0,auto; /*!emojicursor.app*/
+}
+.choice1:visited {
+    all:unset;
+}
+h4 {
+    margin-top: -1%;
+    margin-left: -2%;
+    color: #4d448b;
+    text-align: center;
+    font-size: 1.9vw;
+    font-family: 'Anonymous Pro', monospace;
+    font-weight: 700;
+}
+
+.money {
+    color: #efb1ff;
+}
+
+.remarks {
+    color: #d8b9c3;
+    font-size: 1.3vw;
+    padding: 0 14% 10% 10%;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.balance {
+    color: #fea5ad;
+}
+
+.exit
+{
+  position: absolute;
+  display: block;
+  top: 75%;
+  left: 47.5%;
+  transform: translate(-50%, -50%);
+  width: inherit;
+  padding: 0.5%;
+  height: 3.5vw;
+  background: #0500004d;
+  text-decoration: none;
+  line-height: 50px;
+  color: #ffdac4;
+  font-size: 1.5vw;
+  font-family: verdana;
+  letter-spacing: 0.3vw;
+}
+
+.exit:before,
+.exit:after,
+.text:before,
+.text:after
+{
+  content: '';
+  position: absolute;
+  width: 2vw;
+  height: 0.3vw;
+  background: #4d448b;
+  transition: 1.5s;
+  mix-blend-mode: saturation;
+}
+
+.exit:before
+{
+  top: -2px;
+  left: -2px
+}
+
+.exit:after
+{
+  top: -2px;
+  right: -2px;
+}
+
+.text:before
+{
+  bottom: -2px;
+  left: -2px
+}
+
+.text:after
+{
+  bottom: -2px;
+  right: -2px
+}
+
+.exit:hover:before,
+.exit:hover:after,
+.exit:hover > .text:before,
+.exit:hover > .text:after
+{
+  width: 200px;
+  height: 40px;
+}
+
+.exit:hover > span:hover {
+    color: black;
+}
+
+.exit:hover > .icon {
+    color: black;
+}
+
+a:hover {
+    color: unset;
+}
+
+.answer-section {
+    margin-top: 5%;
 }

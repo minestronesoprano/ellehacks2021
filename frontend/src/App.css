@@ -13,13 +13,14 @@ body {
 h1 {
   color: #fbdcc4;
   font-size: 4vw;
+  margin-top: 4%;
   margin-left: -2%;
   font-family: 'Sura', serif;
 }
 
 h3 {
-  font-size: 2vw;
-  margin-top: -3%;
+  font-size: 2.2vw;
+  margin-top: 1%;
   margin-left: -3%;
   color: #f2a07b;
   font-family: 'Roboto Slab', serif;
@@ -35,7 +36,7 @@ h3 {
 
 footer {
   background: #7d0634a6;
-  color: #e0945a;
+  color: #e6b18a;
   bottom: 0;
   height: 2.8vw;
   font-size: 1.3vw;
@@ -51,7 +52,7 @@ footer {
 
 a {
   all: unset;
-  color: #e0945a;
+  color: #e6b18a;
   cursor: pointer;
 }
 
@@ -68,7 +69,7 @@ li {
   position: absolute;
   display: block;
   top: 50%;
-  left: 48.9%;
+  left: 49.5%;
   transform: translate(-50%, -50%);
   width: inherit;
   padding: 0.5%;

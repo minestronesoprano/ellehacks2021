@@ -1,11 +1,12 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMoneyCheck} from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from "react-router-dom";
 import {  
     Modal,
     ModalContent,
     ModalBody,
-    Button,
     useDisclosure
 } from "@chakra-ui/react";
 import './Play.css';
@@ -132,7 +133,30 @@ const Play = () => {
         q10option2: '',
         q10option2S: 0,
         q10option2I: 0,
-        q10option2E: 0
+        q10option2E: 0,
+
+        question11: '',
+        q11age: 0,
+        q11option1: '',
+        q11option1S: 0,
+        q11option1I: 0,
+        q11option1E: 0,
+        q11option2: '',
+        q11option2S: 0,
+        q11option2I: 0,
+        q11option2E: 0,
+
+        question12: '',
+        q12age: 0,
+        q12option1: '',
+        q12option1S: 0,
+        q12option1I: 0,
+        q12option1E: 0,
+        q12option2: '',
+        q12option2S: 0,
+        q12option2I: 0,
+        q12option2E: 0
+
     })
 
     useEffect(() => {
@@ -247,7 +271,30 @@ const Play = () => {
                 q10option2: res.data[9].option2,
                 q10option2S: res.data[9].option2savings,
                 q10option2I: res.data[9].option2income,
-                q10option2E: res.data[9].option2expenses
+                q10option2E: res.data[9].option2expenses,
+
+                question11: res.data[10].description,
+                q11age: res.data[10].age,
+                q11option1: res.data[10].option1,
+                q11option1S: res.data[10].option1savings,
+                q11option1I: res.data[10].option1income,
+                q11option1E: res.data[10].option1expenses,
+                q11option2: res.data[10].option2,
+                q11option2S: res.data[10].option2savings,
+                q11option2I: res.data[10].option2income,
+                q11option2E: res.data[10].option2expenses,
+
+                question12: res.data[11].description,
+                q12age: res.data[11].age,
+                q12option1: res.data[11].option1,
+                q12option1S: res.data[11].option1savings,
+                q12option1I: res.data[11].option1income,
+                q12option1E: res.data[11].option1expenses,
+                q12option2: res.data[11].option2,
+                q12option2S: res.data[11].option2savings,
+                q12option2I: res.data[11].option2income,
+                q12option2E: res.data[11].option2expenses
+
             }); 
         });
     }, [])
@@ -445,6 +492,44 @@ const Play = () => {
                     "option2e": Data.q10option2E
                 }
             ]
+        },
+
+        {
+            "question": Data.question11,
+            "age": Data.q11age,
+            "answerOptions": [
+                {
+                    "option1": Data.q11option1,
+                    "option1s": Data.q11option1S,
+                    "option1i": Data.q11option1I,
+                    "option1e": Data.q11option1E
+                },
+                {
+                    "option2": Data.q11option2,
+                    "option2s": Data.q11option2S,
+                    "option2i": Data.q11option2I,
+                    "option2e": Data.q11option2E
+                }
+            ]
+        },
+
+        {
+            "question": Data.question12,
+            "age": Data.q12age,
+            "answerOptions": [
+                {
+                    "option1": Data.q12option1,
+                    "option1s": Data.q12option1S,
+                    "option1i": Data.q12option1I,
+                    "option1e": Data.q12option1E
+                },
+                {
+                    "option2": Data.q12option2,
+                    "option2s": Data.q12option2S,
+                    "option2i": Data.q12option2I,
+                    "option2e": Data.q12option2E
+                }
+            ]
         }
     ]
 
@@ -454,7 +539,7 @@ const Play = () => {
 
         if (nextQuestion < questions.length) {
             setCurrentScenario(nextQuestion);
-            if (option == 1) {
+            if (option === 1) {
                 setSavings(savings + answerOption.option1s);
                 setIncome(income + answerOption.option1i);
                 setExpenses(expenses + answerOption.option1e);
@@ -465,6 +550,16 @@ const Play = () => {
                 setExpenses(expenses + answerOption.option2e);
             }
         } else {
+            if (option === 1) {
+                setSavings(savings + answerOption.option1s);
+                setIncome(income + answerOption.option1i);
+                setExpenses(expenses + answerOption.option1e);
+            }
+            else {
+                setSavings(savings + answerOption.option2s);
+                setIncome(income + answerOption.option2i);
+                setExpenses(expenses + answerOption.option2e);
+            }
             setShowEnd(true);
         }
     };
@@ -509,20 +604,19 @@ const Play = () => {
             
             <div className="profile-section">
                 { showEnd ? (
-                <div className='score-section-solo'>
-                    <h1>You ended with ${savings} in savings, ${income} in income, and ${expenses} in expenses..</h1>
-                    <p> It is up to you to decide whether your final results are satifactory for you.<br/>
+                <div className='end-result'>
+                    <h4>You ended with <span className="money">${savings}</span> in savings, <span className="money">${income}</span> in income, and <span className="money">${expenses}</span> in expenses.</h4>
+                    <p class="remarks"> It is up to you to decide whether your final results are satifactory for you.
                     We hope this simulation has taught you a little more about the importance of financial literacy, and we
-                    encourage you to take the right steps to becoming more financially independent! But remember, balance is always key!
+                    encourage you to take the right steps to becoming more financially independent! <span className="balance">But remember, balance is always key!</span>
                     </p>
-                    <p><NavLink exact to='/'>EXIT SIMULATION</NavLink></p>
+                    <NavLink className="exit" exact to='/'><span className="icon"><FontAwesomeIcon icon={faMoneyCheck}/></span><span className="text">{" "}EXIT SIMULATION{" "}</span><span className="icon"><FontAwesomeIcon icon={faMoneyCheck}/></span></NavLink>
                 </div>
                 ) : (
                     <>
                     <div className='scenario-box'>{questions[currentScenario].question}</div>      
                     <div className="stats-section">
                         <ul>
-                        
                             <li> age: <span style={{ color: colourAge(questions[currentScenario].age) }}>{`${questions[currentScenario].age} `} </span></li>
                             <li> saving: $<span style={{ color: colourSavings(savings) }}>{`${savings} `} </span> </li>
                             <li> income: ${income} </li>
@@ -530,8 +624,8 @@ const Play = () => {
                         </ul>
                     </div>
                     <div className='answer-section'>
-                        <Button className = 'choice' onClick={() => handleAnswerOptionClick(1, questions[currentScenario].answerOptions[0])}>{questions[currentScenario].answerOptions[0].option1} </Button>
-                        <Button className = 'choice' onClick={() => handleAnswerOptionClick(2, questions[currentScenario].answerOptions[1])}>{questions[currentScenario].answerOptions[1].option2} </Button>
+                        <button className='choice1' onClick={() => handleAnswerOptionClick(1, questions[currentScenario].answerOptions[0])}>{questions[currentScenario].answerOptions[0].option1} </button>
+                        <button className='choice2' onClick={() => handleAnswerOptionClick(2, questions[currentScenario].answerOptions[1])}>{questions[currentScenario].answerOptions[1].option2} </button>
                     </div>   
                     </>
                 )}
